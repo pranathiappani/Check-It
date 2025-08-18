@@ -8,7 +8,7 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>in.bushansirgur</groupId>
+	<groupId>in.pranathi</groupId>
 	<artifactId>todoapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>todoapp</name>

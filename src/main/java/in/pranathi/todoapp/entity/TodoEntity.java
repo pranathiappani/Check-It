@@ -1,4 +1,4 @@
-package in.bushansirgur.todoapp.entity;
+package in.pranathi.todoapp.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

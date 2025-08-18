@@ -1,7 +1,7 @@
-package in.bushansirgur.todoapp.controller;
+package in.pranathi.todoapp.controller;
 
-import in.bushansirgur.todoapp.entity.TodoEntity;
-import in.bushansirgur.todoapp.repository.TodoRepository;
+import in.pranathi.todoapp.entity.TodoEntity;
+import in.pranathi.todoapp.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
