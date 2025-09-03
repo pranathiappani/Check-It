@@ -1,100 +1,112 @@
 * {
-    font-family: 'Urbanist', sans-serif
+    font-family: 'Urbanist', sans-serif;
 }
 
-/* Header styling */
-header {
-    background: linear-gradient(90deg, #ff6a00, #ff9c33);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border-bottom: 4px solid white;
-}
-
-header h1 {
+/* Body & background */
+body, html {
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    padding: 0;
+    background: #000000; /* Black background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #d1d0d0; /* Pewter text */
 }
 
-body {
-    background-color: #111;
+/* Header (for both login/signup and Todo page) */
+header, .auth-header {
+    text-align: center;
+    padding: 20px 15px;
+    background: #5c4e4e; /* Brown header */
+    color: #d1d0d0; /* Pewter text */
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    border-bottom: 4px solid #988686; /* Coffee Pot accent */
 }
+
+header h1, .auth-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p, .auth-header p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #d1d0d0; /* Pewter */
+}
+
+/* Side text for Todo page */
 .side-text {
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-    color: white;
-    font-family: 'Urbanist', sans-serif;
-    white-space: nowrap; /* Force text to stay in one line */
+    color: #988686; /* Coffee Pot */
 }
 
 .side-text h2 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ff6a00; 
-    
-    
 }
 
 .side-text p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #ddd;
+    color: #d1d0d0; /* Pewter */
 }
+
+/* Todo container */
 .todo-container {
-    width: 40%; /* Covers half of the page */
-    min-height: 60vh; /* Ensures decent height */
+    width: 40%;
+    min-height: 60vh;
     position: absolute;
     top: 55%;
     right: 5%;
     transform: translateY(-50%);
-    background: white;
-    padding: 50px; /* More breathing room */
+    background: #d1d0d0; /* Pewter box */
+    padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #000000; /* Black text inside box */
 }
 
-.form-control:focus {
-    box-shadow: none;
-}
+/* Input */
 .todo-input {
     border-radius: 30px 0 0 30px;
-    border: 1px solid #ccc; /* Add a visible border */
-    background-color: #f1f1f1;
+    border: 1px solid #988686; /* Coffee Pot border */
+    background-color: #d1d0d0; /* Pewter input */
     padding: 0px 20px;
+    color: #000000; /* Black text */
 }
+
 .todo-input:focus {
-    border: 1px solid #ff6a00; /* Optional: highlight with primary color */
-    box-shadow: none;          /* Keep shadow disabled */
-    outline: none;             /* Clean focus style */
+    border: 1px solid #5c4e4e; /* Brown focus */
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    outline: none;
 }
+
+/* Add button */
 .btn-add {
     border-radius: 0 30px 30px 0;
-    background-color: #ff6a00;
-    color: white;
+    background-color: #5c4e4e; /* Brown button */
+    color: #d1d0d0; /* Pewter text */
     border: none;
     padding: 10px 25px;
     font-weight: bold;
-    white-space: nowrap;         /* Prevent line break */
-    display: flex;
-    align-items: center;
-    gap: 5px;                    /* Adds space between "ADD" and "+" */
 }
 .btn-add:hover {
-    background-color: #e85c00;
+    background-color: #000000; /* Black hover */
+    color: #d1d0d0; /* Pewter text */
 }
+
+/* Todo items */
 .todo-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 0;
 }
+
 .todo-text {
     flex-grow: 1;
     margin-left: 10px;
@@ -104,32 +116,136 @@ body {
     opacity: 0.6;
 }
 .check-icon {
-    color: orange;
+    color: #5c4e4e; /* Brown check */
 }
+.unchecked-icon {
+    color: #988686; /* Coffee Pot */
+}
+
+/* Delete */
 .delete-btn {
-    color: #666;
+    color: #5c4e4e; /* Brown */
     background: none;
     border: none;
 }
-.unchecked-icon {
-    color: #ff6a00;
-    font-size: 18px;
-}
-.todo-list {
-    max-height: 300px;          /* Set the maximum height */
-    overflow-y: auto;           /* Enable vertical scrollbar if needed */
-    padding-right: 10px;         /* Space for scrollbar */
-}
 
-/* Optional: Add custom scrollbar styling (optional aesthetic) */
+/* Todo list scroll */
+.todo-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
 .todo-list::-webkit-scrollbar {
     width: 6px;
 }
 .todo-list::-webkit-scrollbar-thumb {
-    background-color: #ff6a00;
+    background-color: #5c4e4e; /* Brown thumb */
     border-radius: 10px;
 }
 .todo-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #000000; /* Black track */
     border-radius: 10px;
+}
+
+/* Auth card for login/signup */
+.auth-container {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #d1d0d0; /* Pewter box */
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    color: #000000; /* Black text inside box */
+}
+
+/* Headings */
+.auth-container h2 {
+    margin-bottom: 30px;
+    color: #5c4e4e; /* Brown heading */
+}
+
+/* Input Boxes */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000; /* Black labels */
+}
+
+.input-box input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #5c4e4e; /* Brown border */
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #d1d0d0; /* Pewter input */
+    color: #000000; /* Black text */
+}
+
+.input-box input:focus {
+    border-color: #988686; /* Coffee Pot focus */
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    outline: none;
+}
+
+/* Buttons */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #5c4e4e 0%, #988686 100%); /* Brown to Coffee Pot */
+    color: #d1d0d0; /* Pewter text */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Auth text */
+.auth-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-text a {
+    color: #5c4e4e; /* Brown links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.auth-footer {
+    text-align: center;
+    padding: 20px;
+    background: #000000; /* Black footer */
+    font-size: 14px;
+    color: #d1d0d0; /* Pewter text */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    .auth-header h1 {
+        font-size: 28px;
+    }
 }

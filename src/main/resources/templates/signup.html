@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="auth-header">
+        <h1>CHECK IT</h1>
+        <p>Create your account and start organizing</p>
+    </header>
+
+    <!-- Signup Card -->
+    <div class="auth-container">
+        <h2>Sign Up</h2>
+        <form th:action="@{/signup}" th:object="${user}" method="post" class="auth-form">
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" th:field="*{username}" placeholder="Choose a username" required>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" th:field="*{password}" placeholder="Choose a password" required>
+            </div>
+            <button type="submit" class="auth-btn">Sign Up</button>
+        </form>
+        <p class="auth-text">Already have an account? <a th:href="@{/login}">Login</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="auth-footer">
+        <p>&copy; 2025 Check It App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
