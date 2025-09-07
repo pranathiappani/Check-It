@@ -6,21 +6,21 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: #000000; /* Black background */
+    background: #030000; /* Jet Black background */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #d1d0d0; /* Pewter text */
+    color: #a4a8ab; /* Pewter text */
 }
 
 /* Header (for both login/signup and Todo page) */
 header, .auth-header {
     text-align: center;
     padding: 20px 15px;
-    background: #5c4e4e; /* Brown header */
-    color: #d1d0d0; /* Pewter text */
+    background: #1f2024; /* Ebony header */
+    color: #a4a8ab; /* Pewter text */
     box-shadow: 0 4px 10px rgba(255,255,255,0.1);
-    border-bottom: 4px solid #988686; /* Coffee Pot accent */
+    border-bottom: 4px solid #343c3b; /* Gray accent */
 }
 
 header h1, .auth-header h1 {
@@ -32,7 +32,7 @@ header h1, .auth-header h1 {
 header p, .auth-header p {
     margin-top: 5px;
     font-size: 16px;
-    color: #d1d0d0; /* Pewter */
+    color: #a4a8ab; /* Pewter */
 }
 
 /* Side text for Todo page */
@@ -41,7 +41,7 @@ header p, .auth-header p {
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-    color: #988686; /* Coffee Pot */
+    color: #343c3b; /* Gray */
 }
 
 .side-text h2 {
@@ -52,7 +52,7 @@ header p, .auth-header p {
 .side-text p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #d1d0d0; /* Pewter */
+    color: #a4a8ab; /* Pewter */
 }
 
 /* Todo container */
@@ -63,24 +63,24 @@ header p, .auth-header p {
     top: 55%;
     right: 5%;
     transform: translateY(-50%);
-    background: #d1d0d0; /* Pewter box */
+    background: #a4a8ab; /* Pewter box */
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    color: #000000; /* Black text inside box */
+    color: #030000; /* Jet Black text inside box */
 }
 
 /* Input */
 .todo-input {
     border-radius: 30px 0 0 30px;
-    border: 1px solid #988686; /* Coffee Pot border */
-    background-color: #d1d0d0; /* Pewter input */
+    border: 1px solid #343c3b; /* Gray border */
+    background-color: #a4a8ab; /* Pewter input */
     padding: 0px 20px;
-    color: #000000; /* Black text */
+    color: #030000; /* Jet Black text */
 }
 
 .todo-input:focus {
-    border: 1px solid #5c4e4e; /* Brown focus */
+    border: 1px solid #1f2024; /* Ebony focus */
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
     outline: none;
 }
@@ -88,15 +88,15 @@ header p, .auth-header p {
 /* Add button */
 .btn-add {
     border-radius: 0 30px 30px 0;
-    background-color: #5c4e4e; /* Brown button */
-    color: #d1d0d0; /* Pewter text */
+    background-color: #1f2024; /* Ebony button */
+    color: #a4a8ab; /* Pewter text */
     border: none;
     padding: 10px 25px;
     font-weight: bold;
 }
 .btn-add:hover {
-    background-color: #000000; /* Black hover */
-    color: #d1d0d0; /* Pewter text */
+    background-color: #030000; /* Jet Black hover */
+    color: #a4a8ab; /* Pewter text */
 }
 
 /* Todo items */
@@ -116,15 +116,15 @@ header p, .auth-header p {
     opacity: 0.6;
 }
 .check-icon {
-    color: #5c4e4e; /* Brown check */
+    color: #1f2024; /* Ebony check */
 }
 .unchecked-icon {
-    color: #988686; /* Coffee Pot */
+    color: #343c3b; /* Gray */
 }
 
 /* Delete */
 .delete-btn {
-    color: #5c4e4e; /* Brown */
+    color: #1f2024; /* Ebony */
     background: none;
     border: none;
 }
@@ -139,11 +139,11 @@ header p, .auth-header p {
     width: 6px;
 }
 .todo-list::-webkit-scrollbar-thumb {
-    background-color: #5c4e4e; /* Brown thumb */
+    background-color: #1f2024; /* Ebony thumb */
     border-radius: 10px;
 }
 .todo-list::-webkit-scrollbar-track {
-    background: #000000; /* Black track */
+    background: #030000; /* Jet Black track */
     border-radius: 10px;
 }
 
@@ -151,18 +151,18 @@ header p, .auth-header p {
 .auth-container {
     width: 400px;
     margin: 40px auto;
-    background-color: #d1d0d0; /* Pewter box */
+    background-color: #a4a8ab; /* Pewter box */
     border-radius: 16px;
     padding: 40px 30px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     text-align: center;
-    color: #000000; /* Black text inside box */
+    color: #030000; /* Jet Black text inside box */
 }
 
 /* Headings */
 .auth-container h2 {
     margin-bottom: 30px;
-    color: #5c4e4e; /* Brown heading */
+    color: #1f2024; /* Ebony heading */
 }
 
 /* Input Boxes */
@@ -176,21 +176,21 @@ header p, .auth-header p {
 .input-box label {
     margin-bottom: 8px;
     font-weight: 600;
-    color: #000000; /* Black labels */
+    color: #030000; /* Jet Black labels */
 }
 
 .input-box input {
     padding: 14px;
     border-radius: 10px;
-    border: 1px solid #5c4e4e; /* Brown border */
+    border: 1px solid #1f2024; /* Ebony border */
     font-size: 16px;
     transition: all 0.3s ease;
-    background-color: #d1d0d0; /* Pewter input */
-    color: #000000; /* Black text */
+    background-color: #a4a8ab; /* Pewter input */
+    color: #030000; /* Jet Black text */
 }
 
 .input-box input:focus {
-    border-color: #988686; /* Coffee Pot focus */
+    border-color: #343c3b; /* Gray focus */
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
     outline: none;
 }
@@ -201,8 +201,8 @@ header p, .auth-header p {
     padding: 14px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(90deg, #5c4e4e 0%, #988686 100%); /* Brown to Coffee Pot */
-    color: #d1d0d0; /* Pewter text */
+    background: linear-gradient(90deg, #1f2024 0%, #343c3b 100%); /* Ebony to Gray */
+    color: #a4a8ab; /* Pewter text */
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -221,7 +221,7 @@ header p, .auth-header p {
 }
 
 .auth-text a {
-    color: #5c4e4e; /* Brown links */
+    color: #1f2024; /* Ebony links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -234,9 +234,9 @@ header p, .auth-header p {
 .auth-footer {
     text-align: center;
     padding: 20px;
-    background: #000000; /* Black footer */
+    background: #030000; /* Jet Black footer */
     font-size: 14px;
-    color: #d1d0d0; /* Pewter text */
+    color: #a4a8ab; /* Pewter text */
 }
 
 /* Responsive */
